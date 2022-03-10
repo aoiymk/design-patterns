@@ -25,6 +25,6 @@ class Creator(ABC):
         """
 
         product = self.factory_method()
-        result = f"Creator: Invocando al producto -  {product.operation()}"
+        result = f"Creator: Generando operacion -  {product.operation()}"
 
         return result
