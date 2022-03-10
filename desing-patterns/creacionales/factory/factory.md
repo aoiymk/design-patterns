@@ -8,11 +8,20 @@ Se crea una aplicación de gestión logística, cuya primera versión es capaz d
 Al cabo de un tiempo, la aplicación se vuelve bastante popular y se deben integrar otros medios de transporte, pero todo el código está acoplado.
 
 
+
 ## Implementación
 
+### Para los productos
 1. Declaración de la interfaz de **producto** la cual es común a todos los tipos de productos que se puedan crear. En dicha interfaz se deben declarar todas las operaciones que los productos deben implementar.
-
 2. Crear las distintas implementaciones de productos concretos.
 
+### Interfaz Creadora
+1. Añadir el patrón Factory Method vacío dentro de la clase creadora, el tipo de retorno debe ser la interfaz de producto
 
-3. Definir clase creadora donde se declara el método de fábrica.
+### Sustitución de constructores de producto
+Por cada una de las llamadas a constructores de producto se debe:
+
+1. Sustituir por la invocación del Factory method
+
+### Clases Creadoras
+1. Escribir cada subclase creadora para cada producto existente
